@@ -9,9 +9,9 @@
       </FileRef>
    </Group>
    <FileRef
-      location = "group:Mocker.xcodeproj">
+      location = "group:Source/Mocker.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:FeedApp.xcodeproj">
+      location = "container:Example/FeedApp.xcodeproj">
    </FileRef>
 </Workspace>

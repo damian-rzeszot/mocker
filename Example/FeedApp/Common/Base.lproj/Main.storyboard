@@ -68,7 +68,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Feed" id="1MS-Rg-aa6">
-                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="refresh" id="I0w-L4-c7K">
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="I0w-L4-c7K">
                             <connections>
                                 <action selector="refreshAction" destination="BYZ-38-t0r" id="Jw2-bH-TYA"/>
                             </connections>

@@ -36,7 +36,9 @@ class RouterTests: XCTestCase {
 class ChildRouter: Router {
 
     func start(with mocker: Mocker) {
-        mocker.get("/example") { _ in }
+        mocker.get("/example") { env in
+            // ...
+        }
     }
 
     func stop(with mocker: Mocker) {

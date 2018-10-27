@@ -8,20 +8,6 @@
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2D39B55B216CC95200641AE4"
-               BuildableName = "Mocker.framework"
-               BlueprintName = "Mocker"
-               ReferencedContainer = "container:Mocker.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
             buildForRunning = "YES"
             buildForProfiling = "YES"
             buildForArchiving = "YES"
@@ -31,35 +17,7 @@
                BlueprintIdentifier = "2DA2A31421665EC70071829D"
                BuildableName = "FeedApp.app"
                BlueprintName = "FeedApp"
-               ReferencedContainer = "container:FeedApp.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2D857E4A216D016300F5FA27"
-               BuildableName = "FeedAppUITests.xctest"
-               BlueprintName = "FeedAppUITests"
-               ReferencedContainer = "container:FeedApp.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2D08DD0D217FBF4D0060CA2B"
-               BuildableName = "FeedAppTests.xctest"
-               BlueprintName = "FeedAppTests"
-               ReferencedContainer = "container:FeedApp.xcodeproj">
+               ReferencedContainer = "container:Example/FeedApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -74,17 +32,24 @@
       <CodeCoverageTargets>
          <BuildableReference
             BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2DA2A31421665EC70071829D"
+            BuildableName = "FeedApp.app"
+            BlueprintName = "FeedApp"
+            ReferencedContainer = "container:Example/FeedApp.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D08DD0D217FBF4D0060CA2B"
             BuildableName = "FeedAppTests.xctest"
             BlueprintName = "FeedAppTests"
-            ReferencedContainer = "container:FeedApp.xcodeproj">
+            ReferencedContainer = "container:Example/FeedApp.xcodeproj">
          </BuildableReference>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D857E4A216D016300F5FA27"
             BuildableName = "FeedAppUITests.xctest"
             BlueprintName = "FeedAppUITests"
-            ReferencedContainer = "container:FeedApp.xcodeproj">
+            ReferencedContainer = "container:Example/FeedApp.xcodeproj">
          </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
@@ -92,20 +57,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2D857E4A216D016300F5FA27"
-               BuildableName = "FeedAppUITests.xctest"
-               BlueprintName = "FeedAppUITests"
-               ReferencedContainer = "container:FeedApp.xcodeproj">
+               BlueprintIdentifier = "2D08DD0D217FBF4D0060CA2B"
+               BuildableName = "FeedAppTests.xctest"
+               BlueprintName = "FeedAppTests"
+               ReferencedContainer = "container:Example/FeedApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2D08DD0D217FBF4D0060CA2B"
-               BuildableName = "FeedAppTests.xctest"
-               BlueprintName = "FeedAppTests"
-               ReferencedContainer = "container:FeedApp.xcodeproj">
+               BlueprintIdentifier = "2D857E4A216D016300F5FA27"
+               BuildableName = "FeedAppUITests.xctest"
+               BlueprintName = "FeedAppUITests"
+               ReferencedContainer = "container:Example/FeedApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -115,7 +80,7 @@
             BlueprintIdentifier = "2DA2A31421665EC70071829D"
             BuildableName = "FeedApp.app"
             BlueprintName = "FeedApp"
-            ReferencedContainer = "container:FeedApp.xcodeproj">
+            ReferencedContainer = "container:Example/FeedApp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -131,16 +96,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2DA2A31421665EC70071829D"
             BuildableName = "FeedApp.app"
             BlueprintName = "FeedApp"
-            ReferencedContainer = "container:FeedApp.xcodeproj">
+            ReferencedContainer = "container:Example/FeedApp.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -150,16 +114,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2DA2A31421665EC70071829D"
             BuildableName = "FeedApp.app"
             BlueprintName = "FeedApp"
-            ReferencedContainer = "container:FeedApp.xcodeproj">
+            ReferencedContainer = "container:Example/FeedApp.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

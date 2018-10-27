@@ -17,7 +17,21 @@
                BlueprintIdentifier = "2D39B55B216CC95200641AE4"
                BuildableName = "Mocker.framework"
                BlueprintName = "Mocker"
-               ReferencedContainer = "container:Mocker.xcodeproj">
+               ReferencedContainer = "container:Source/Mocker.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2DCECA9F21761FA500F44FA3"
+               BuildableName = "MockerTests.xctest"
+               BlueprintName = "MockerTests"
+               ReferencedContainer = "container:Source/Mocker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,14 +49,14 @@
             BlueprintIdentifier = "2D39B55B216CC95200641AE4"
             BuildableName = "Mocker.framework"
             BlueprintName = "Mocker"
-            ReferencedContainer = "container:Mocker.xcodeproj">
+            ReferencedContainer = "container:Source/Mocker.xcodeproj">
          </BuildableReference>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2DCECA9F21761FA500F44FA3"
             BuildableName = "MockerTests.xctest"
             BlueprintName = "MockerTests"
-            ReferencedContainer = "container:Mocker.xcodeproj">
+            ReferencedContainer = "container:Source/Mocker.xcodeproj">
          </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
@@ -53,7 +67,7 @@
                BlueprintIdentifier = "2DCECA9F21761FA500F44FA3"
                BuildableName = "MockerTests.xctest"
                BlueprintName = "MockerTests"
-               ReferencedContainer = "container:Mocker.xcodeproj">
+               ReferencedContainer = "container:Source/Mocker.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -63,7 +77,7 @@
             BlueprintIdentifier = "2D39B55B216CC95200641AE4"
             BuildableName = "Mocker.framework"
             BlueprintName = "Mocker"
-            ReferencedContainer = "container:Mocker.xcodeproj">
+            ReferencedContainer = "container:Source/Mocker.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -86,7 +100,7 @@
             BlueprintIdentifier = "2D39B55B216CC95200641AE4"
             BuildableName = "Mocker.framework"
             BlueprintName = "Mocker"
-            ReferencedContainer = "container:Mocker.xcodeproj">
+            ReferencedContainer = "container:Source/Mocker.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -104,7 +118,7 @@
             BlueprintIdentifier = "2D39B55B216CC95200641AE4"
             BuildableName = "Mocker.framework"
             BlueprintName = "Mocker"
-            ReferencedContainer = "container:Mocker.xcodeproj">
+            ReferencedContainer = "container:Source/Mocker.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
