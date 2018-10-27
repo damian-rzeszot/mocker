@@ -1,0 +1,7 @@
+status: 200
+delay: 0.3
+location: https://example.org/
+authorization: bearer 12345
+custom-header: custom-value
+---
+this is body
