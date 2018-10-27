@@ -11,14 +11,14 @@
 		2D857E4E216D016300F5FA27 /* FeedAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D857E4D216D016300F5FA27 /* FeedAppUITests.swift */; };
 		2D857E57216D040100F5FA27 /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D857E56216D040100F5FA27 /* ShowViewController.swift */; };
 		2D857E59216D046300F5FA27 /* PostFetcherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D857E58216D046300F5FA27 /* PostFetcherService.swift */; };
-		2D8A9FB821847CF40029F99C /* Mocker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8A9FB621847CED0029F99C /* Mocker.framework */; };
-		2D8A9FB921847CF40029F99C /* Mocker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8A9FB621847CED0029F99C /* Mocker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2DA2A31921665EC70071829D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA2A31821665EC70071829D /* AppDelegate.swift */; };
 		2DA2A31B21665EC70071829D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA2A31A21665EC70071829D /* FeedViewController.swift */; };
 		2DA2A31E21665EC70071829D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DA2A31C21665EC70071829D /* Main.storyboard */; };
 		2DA2A32021665EC90071829D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DA2A31F21665EC90071829D /* Assets.xcassets */; };
 		2DA2A32321665EC90071829D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DA2A32121665EC90071829D /* LaunchScreen.storyboard */; };
 		2DA2A32B21665EF40071829D /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA2A32A21665EF40071829D /* CreateViewController.swift */; };
+		2DB61BF62184810000E89466 /* Mocker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB61BF3218480F800E89466 /* Mocker.framework */; };
+		2DB61BF72184810000E89466 /* Mocker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB61BF3218480F800E89466 /* Mocker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2DEEDB3B21678BC800C55728 /* FeedFetcherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEDB3A21678BC800C55728 /* FeedFetcherService.swift */; };
 		2DEEDB3D21678D4500C55728 /* EntryCreatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEDB3C21678D4500C55728 /* EntryCreatorService.swift */; };
 		2DEEDB3F21678EBF00C55728 /* FeedEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEDB3E21678EBF00C55728 /* FeedEntryCell.swift */; };
@@ -40,23 +40,23 @@
 			remoteGlobalIDString = 2DA2A31421665EC70071829D;
 			remoteInfo = FeedApp;
 		};
-		2D859CB82180B3DE00B52320 /* PBXContainerItemProxy */ = {
+		2DB61BF2218480F800E89466 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2D859CB32180B3DE00B52320 /* Mocker.xcodeproj */;
+			containerPortal = 2DB61BED218480F800E89466 /* Mocker.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 2D39B55C216CC95200641AE4;
 			remoteInfo = Mocker;
 		};
-		2D859CBA2180B3DE00B52320 /* PBXContainerItemProxy */ = {
+		2DB61BF4218480F800E89466 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2D859CB32180B3DE00B52320 /* Mocker.xcodeproj */;
+			containerPortal = 2DB61BED218480F800E89466 /* Mocker.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 2DCECAA021761FA500F44FA3;
 			remoteInfo = MockerTests;
 		};
-		2DF5C55F2184791800857294 /* PBXContainerItemProxy */ = {
+		2DB61BF82184810000E89466 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2D859CB32180B3DE00B52320 /* Mocker.xcodeproj */;
+			containerPortal = 2DB61BED218480F800E89466 /* Mocker.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D39B55B216CC95200641AE4;
 			remoteInfo = Mocker;
@@ -64,13 +64,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2D8A9FBA21847CF40029F99C /* Embed Frameworks */ = {
+		2DB61BFA2184810000E89466 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2D8A9FB921847CF40029F99C /* Mocker.framework in Embed Frameworks */,
+				2DB61BF72184810000E89466 /* Mocker.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,8 +86,6 @@
 		2D857E4F216D016300F5FA27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D857E56216D040100F5FA27 /* ShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
 		2D857E58216D046300F5FA27 /* PostFetcherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFetcherService.swift; sourceTree = "<group>"; };
-		2D859CB32180B3DE00B52320 /* Mocker.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Mocker.xcodeproj; sourceTree = "<group>"; };
-		2D8A9FB621847CED0029F99C /* Mocker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Mocker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D9459E62167A24B00CC5888 /* FeedAppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAppRouter.swift; sourceTree = "<group>"; };
 		2DA2A31521665EC70071829D /* FeedApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DA2A31821665EC70071829D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +95,7 @@
 		2DA2A32221665EC90071829D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DA2A32421665EC90071829D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DA2A32A21665EF40071829D /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+		2DB61BED218480F800E89466 /* Mocker.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Mocker.xcodeproj; path = ../Source/Mocker.xcodeproj; sourceTree = "<group>"; };
 		2DEEDB3A21678BC800C55728 /* FeedFetcherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedFetcherService.swift; sourceTree = "<group>"; };
 		2DEEDB3C21678D4500C55728 /* EntryCreatorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCreatorService.swift; sourceTree = "<group>"; };
 		2DEEDB3E21678EBF00C55728 /* FeedEntryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedEntryCell.swift; sourceTree = "<group>"; };
@@ -107,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D8A9FB821847CF40029F99C /* Mocker.framework in Frameworks */,
+				2DB61BF62184810000E89466 /* Mocker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,8 +125,7 @@
 		2D10E594216CCA0400357BCE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2D8A9FB621847CED0029F99C /* Mocker.framework */,
-				2D859CB32180B3DE00B52320 /* Mocker.xcodeproj */,
+				2DB61BED218480F800E89466 /* Mocker.xcodeproj */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -148,15 +146,6 @@
 				2D857E58216D046300F5FA27 /* PostFetcherService.swift */,
 			);
 			path = Show;
-			sourceTree = "<group>";
-		};
-		2D859CB42180B3DE00B52320 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2D859CB92180B3DE00B52320 /* Mocker.framework */,
-				2D859CBB2180B3DE00B52320 /* MockerTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		2DA2A30C21665EC70071829D = {
@@ -192,6 +181,15 @@
 				2D857E55216D03F200F5FA27 /* Show */,
 			);
 			path = FeedApp;
+			sourceTree = "<group>";
+		};
+		2DB61BEE218480F800E89466 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DB61BF3218480F800E89466 /* Mocker.framework */,
+				2DB61BF5218480F800E89466 /* MockerTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		2DEEDB4021678EDC00C55728 /* List */ = {
@@ -289,12 +287,12 @@
 				2DA2A31121665EC70071829D /* Sources */,
 				2DA2A31321665EC70071829D /* Resources */,
 				2DF5C5612184791800857294 /* Frameworks */,
-				2D8A9FBA21847CF40029F99C /* Embed Frameworks */,
+				2DB61BFA2184810000E89466 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2DF5C5602184791800857294 /* PBXTargetDependency */,
+				2DB61BF92184810000E89466 /* PBXTargetDependency */,
 			);
 			name = FeedApp;
 			productName = FeedApp;
@@ -337,8 +335,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 2D859CB42180B3DE00B52320 /* Products */;
-					ProjectRef = 2D859CB32180B3DE00B52320 /* Mocker.xcodeproj */;
+					ProductGroup = 2DB61BEE218480F800E89466 /* Products */;
+					ProjectRef = 2DB61BED218480F800E89466 /* Mocker.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -351,18 +349,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		2D859CB92180B3DE00B52320 /* Mocker.framework */ = {
+		2DB61BF3218480F800E89466 /* Mocker.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Mocker.framework;
-			remoteRef = 2D859CB82180B3DE00B52320 /* PBXContainerItemProxy */;
+			remoteRef = 2DB61BF2218480F800E89466 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2D859CBB2180B3DE00B52320 /* MockerTests.xctest */ = {
+		2DB61BF5218480F800E89466 /* MockerTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = MockerTests.xctest;
-			remoteRef = 2D859CBA2180B3DE00B52320 /* PBXContainerItemProxy */;
+			remoteRef = 2DB61BF4218480F800E89466 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -426,10 +424,10 @@
 			target = 2DA2A31421665EC70071829D /* FeedApp */;
 			targetProxy = 2D857E50216D016300F5FA27 /* PBXContainerItemProxy */;
 		};
-		2DF5C5602184791800857294 /* PBXTargetDependency */ = {
+		2DB61BF92184810000E89466 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Mocker;
-			targetProxy = 2DF5C55F2184791800857294 /* PBXContainerItemProxy */;
+			targetProxy = 2DB61BF82184810000E89466 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -650,6 +648,7 @@
 		2DA2A32821665EC90071829D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9G47WR9NR2;
@@ -665,6 +664,7 @@
 		2DA2A32921665EC90071829D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9G47WR9NR2;
