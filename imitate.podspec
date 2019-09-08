@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'imitate'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'This is not a meaningful summary'
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
@@ -9,7 +9,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/damian-rzeszot/mocker'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Damian Rzeszot' => 'damian.rzeszot@gmail.com' }
-  s.source           = { :git => 'https://github.com/damian.rzeszot/mocker.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/damian-rzeszot/mocker.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '11.0'
 
