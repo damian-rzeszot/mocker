@@ -71,11 +71,14 @@ class FeedViewController: UIViewController {
     // MARK: -
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let vc = segue.destination as? ShowViewController,
-            let cell = sender as? UITableViewCell,
-            let path = tableView.indexPath(for: cell) else { return }
+        if let vc = segue.destination as? ShowViewController {
+            guard let cell = sender as? UITableViewCell,
+                let path = tableView.indexPath(for: cell) else { return }
 
-        vc.post = payload?.entries[path.row]
+            vc.post = payload?.entries[path.row]
+        } else if let nav = segue.destination as? UINavigationController, let vc = nav.topViewController as? CreateViewController {
+            vc.delegate = self
+        }
     }
 
 }
@@ -95,6 +98,13 @@ extension FeedViewController: UITableViewDataSource {
         }
 
         return cell
+    }
+}
+
+extension FeedViewController: CreateViewControllerDelegate {
+    func createViewControllerDidFinish(_ createViewController: CreateViewController) {
+        refreshAction()
+        dismiss(animated: true)
     }
 }
 

@@ -18,8 +18,7 @@
 		2DA2A32021665EC90071829D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DA2A31F21665EC90071829D /* Assets.xcassets */; };
 		2DA2A32321665EC90071829D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DA2A32121665EC90071829D /* LaunchScreen.storyboard */; };
 		2DA2A32B21665EF40071829D /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA2A32A21665EF40071829D /* CreateViewController.swift */; };
-		2DB61BF62184810000E89466 /* Mocker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB61BF3218480F800E89466 /* Mocker.framework */; };
-		2DB61BF72184810000E89466 /* Mocker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB61BF3218480F800E89466 /* Mocker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2DA86EDC2365A35A00889B4D /* CreateViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA86EDB2365A35A00889B4D /* CreateViewControllerDelegate.swift */; };
 		2DEEDB3B21678BC800C55728 /* FeedFetcherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEDB3A21678BC800C55728 /* FeedFetcherService.swift */; };
 		2DEEDB3D21678D4500C55728 /* EntryCreatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEDB3C21678D4500C55728 /* EntryCreatorService.swift */; };
 		2DEEDB3F21678EBF00C55728 /* FeedEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEDB3E21678EBF00C55728 /* FeedEntryCell.swift */; };
@@ -55,28 +54,7 @@
 			remoteGlobalIDString = 2DCECAA021761FA500F44FA3;
 			remoteInfo = MockerTests;
 		};
-		2DB61BF82184810000E89466 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2DB61BED218480F800E89466 /* Mocker.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 2D39B55B216CC95200641AE4;
-			remoteInfo = Mocker;
-		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		2DB61BFA2184810000E89466 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				2DB61BF72184810000E89466 /* Mocker.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2D08DD0E217FBF4D0060CA2B /* FeedAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeedAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +74,7 @@
 		2DA2A32221665EC90071829D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DA2A32421665EC90071829D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DA2A32A21665EF40071829D /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+		2DA86EDB2365A35A00889B4D /* CreateViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewControllerDelegate.swift; sourceTree = "<group>"; };
 		2DB61BED218480F800E89466 /* Mocker.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Mocker.xcodeproj; path = ../Source/Mocker.xcodeproj; sourceTree = "<group>"; };
 		2DEEDB3A21678BC800C55728 /* FeedFetcherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedFetcherService.swift; sourceTree = "<group>"; };
 		2DEEDB3C21678D4500C55728 /* EntryCreatorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCreatorService.swift; sourceTree = "<group>"; };
@@ -108,7 +87,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D9C6FC62365A1C400ADEF83 /* Imitate in Frameworks */,
-				2DB61BF62184810000E89466 /* Mocker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				2DA2A32A21665EF40071829D /* CreateViewController.swift */,
+				2DA86EDB2365A35A00889B4D /* CreateViewControllerDelegate.swift */,
 				2DEEDB3C21678D4500C55728 /* EntryCreatorService.swift */,
 			);
 			path = Create;
@@ -289,12 +268,10 @@
 				2DA2A31121665EC70071829D /* Sources */,
 				2DA2A31321665EC70071829D /* Resources */,
 				2DF5C5612184791800857294 /* Frameworks */,
-				2DB61BFA2184810000E89466 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2DB61BF92184810000E89466 /* PBXTargetDependency */,
 			);
 			name = FeedApp;
 			packageProductDependencies = (
@@ -316,14 +293,17 @@
 				TargetAttributes = {
 					2D08DD0D217FBF4D0060CA2B = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1110;
 						TestTargetID = 2DA2A31421665EC70071829D;
 					};
 					2D857E4A216D016300F5FA27 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1110;
 						TestTargetID = 2DA2A31421665EC70071829D;
 					};
 					2DA2A31421665EC70071829D = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1110;
 					};
 				};
 			};
@@ -412,6 +392,7 @@
 				2DEEDB3B21678BC800C55728 /* FeedFetcherService.swift in Sources */,
 				2D857E57216D040100F5FA27 /* ShowViewController.swift in Sources */,
 				2DEEDB3D21678D4500C55728 /* EntryCreatorService.swift in Sources */,
+				2DA86EDC2365A35A00889B4D /* CreateViewControllerDelegate.swift in Sources */,
 				2DA2A31921665EC70071829D /* AppDelegate.swift in Sources */,
 				2DEEDB3F21678EBF00C55728 /* FeedEntryCell.swift in Sources */,
 				2DF5C55C218478F500857294 /* FeedAppRouter.swift in Sources */,
@@ -431,11 +412,6 @@
 			isa = PBXTargetDependency;
 			target = 2DA2A31421665EC70071829D /* FeedApp */;
 			targetProxy = 2D857E50216D016300F5FA27 /* PBXContainerItemProxy */;
-		};
-		2DB61BF92184810000E89466 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Mocker;
-			targetProxy = 2DB61BF82184810000E89466 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -473,7 +449,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rzeszot.FeedAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FeedApp.app/FeedApp";
 			};
@@ -493,7 +469,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rzeszot.FeedAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FeedApp.app/FeedApp";
 			};
@@ -512,7 +488,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rzeszot.FeedAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = FeedApp;
 			};
@@ -531,7 +507,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rzeszot.FeedAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = FeedApp;
 			};
@@ -588,7 +564,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -643,7 +619,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -656,7 +632,6 @@
 		2DA2A32821665EC90071829D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9G47WR9NR2;
@@ -664,7 +639,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rzeszot.FeedApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -672,7 +647,6 @@
 		2DA2A32921665EC90071829D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9G47WR9NR2;
@@ -680,7 +654,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rzeszot.FeedApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

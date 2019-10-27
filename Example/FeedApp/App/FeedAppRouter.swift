@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Mocker
+import Imitate
 
 class FeedAppRouter: Router {
 
@@ -30,16 +30,16 @@ class FeedAppRouter: Router {
 
     // MARK: -
 
-    func start(with mocker: Mocker) {
-        mocker.get("/api/feed", with: list)
-        mocker.post("/api/post", with: create)
-        mocker.get("/api/post/*", with: show)
+    func start(with imitate: Imitate) {
+        imitate.get("/api/feed", with: list)
+        imitate.post("/api/post", with: create)
+        imitate.get("/api/post/*", with: show)
     }
 
-    func stop(with mocker: Mocker) {
-        mocker.unmatch(get: "/api/feed")
-        mocker.unmatch(post: "/api/post")
-        mocker.unmatch(get: "/api/post/*")
+    func stop(with imitate: Imitate) {
+        imitate.unmatch(get: "/api/feed")
+        imitate.unmatch(post: "/api/post")
+        imitate.unmatch(get: "/api/post/*")
     }
 
     // MARK: - GET /api/feed
