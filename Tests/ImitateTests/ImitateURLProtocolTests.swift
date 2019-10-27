@@ -1,41 +1,33 @@
-//
-//  MockURLProtocolTests.swift
-//  MockerTests
-//
-//  Created by Damian Rzeszot on 27/10/2018.
-//  Copyright © 2018 Damian Rzeszot. All rights reserved.
-//
-
 import XCTest
-@testable import Mocker
+@testable import Imitate
 
-class MockURLProtocolTests: XCTestCase {
+final class ImitateURLProtocolTests: XCTestCase {
 
     func testInstance() {
-        let mocker = MockMocker()
-        MockURLProtocol.mocker = mocker
+        let imitate = MockImitate()
+        ImitateURLProtocol.imitate = imitate
 
-        let proto = MockURLProtocol(request: .example, cachedResponse: nil, client: nil)
+        let proto = ImitateURLProtocol(request: .example, cachedResponse: nil, client: nil)
 
-        XCTAssertTrue(proto.mocker === mocker)
-        XCTAssertTrue(MockURLProtocol.mocker === mocker)
+        XCTAssertTrue(proto.imitate === imitate)
+        XCTAssertTrue(ImitateURLProtocol.imitate === imitate)
     }
 
     func testCanInit() {
-        let mocker = MockMocker()
-        MockURLProtocol.mocker = mocker
+        let imitate = MockImitate()
+        ImitateURLProtocol.imitate = imitate
 
-        mocker.handler = { _ in }
-        XCTAssertTrue(MockURLProtocol.canInit(with: .example))
+        imitate.handler = { _ in }
+        XCTAssertTrue(ImitateURLProtocol.canInit(with: .example))
 
-        mocker.handler = nil
-        XCTAssertFalse(MockURLProtocol.canInit(with: .example))
+        imitate.handler = nil
+        XCTAssertFalse(ImitateURLProtocol.canInit(with: .example))
     }
 
     func testCannonicalRequest() {
         let input = URLRequest.example
 
-        let request = MockURLProtocol.canonicalRequest(for: input)
+        let request = ImitateURLProtocol.canonicalRequest(for: input)
 
         XCTAssertNotNil(request.url)
         XCTAssertEqual(request.url?.absoluteString, input.url?.absoluteString)
@@ -46,13 +38,13 @@ class MockURLProtocolTests: XCTestCase {
     func testStartLoading() {
         // given
         let client = MockClient()
-        let mocker = MockMocker()
-        let proto = MockURLProtocol(request: .example, cachedResponse: nil, client: client)
-        MockURLProtocol.mocker = mocker
+        let imitate = MockImitate()
+        let proto = ImitateURLProtocol(request: .example, cachedResponse: nil, client: client)
+        ImitateURLProtocol.imitate = imitate
 
 
         let exp = expectation(description: "")
-        mocker.handler = { env in
+        imitate.handler = { env in
             env.response.status = 123
             env.response.headers["Hello"] = "World"
             env.response.body = "test hello".data(using: .utf8)
@@ -77,9 +69,9 @@ class MockURLProtocolTests: XCTestCase {
 
     func testStopLoading() {
         let client = MockClient()
-        let mocker = MockMocker()
-        let proto = MockURLProtocol(request: .example, cachedResponse: nil, client: client)
-        MockURLProtocol.mocker = mocker
+        let imitate = MockImitate()
+        let proto = ImitateURLProtocol(request: .example, cachedResponse: nil, client: client)
+        ImitateURLProtocol.imitate = imitate
 
         proto.stopLoading()
     }
@@ -87,16 +79,16 @@ class MockURLProtocolTests: XCTestCase {
     func testStartLoadingWithDelay() {
         // given
         let client = MockClient()
-        let mocker = MockMocker()
-        let proto = MockURLProtocol(request: .example, cachedResponse: nil, client: client)
-        MockURLProtocol.mocker = mocker
+        let imitate = MockImitate()
+        let proto = ImitateURLProtocol(request: .example, cachedResponse: nil, client: client)
+        ImitateURLProtocol.imitate = imitate
 
         let responding = expectation(description: "")
         client.expectation = responding
 
 
         let handling = expectation(description: "")
-        mocker.handler = { env in
+        imitate.handler = { env in
             env.delay = 0.2
             handling.fulfill()
         }

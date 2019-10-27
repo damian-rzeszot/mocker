@@ -1,5 +1,5 @@
 //
-//  MockURLProtocol.swift
+//  ImitateURLProtocol.swift
 //  FeedApp
 //
 //  Created by Damian Rzeszot on 27/10/2018.
@@ -8,20 +8,20 @@
 
 import Foundation
 
-public class MockURLProtocol: URLProtocol {
+public class ImitateURLProtocol: URLProtocol {
 
     // MARK: -
 
-    internal static var mocker: Mocker! = .shared
+    internal static var imitate: Imitate! = .shared
 
-    internal var mocker: Mocker {
-        return MockURLProtocol.mocker
+    internal var imitate: Imitate {
+        return ImitateURLProtocol.imitate
     }
 
     // MARK: -
 
     override public class func canInit(with request: URLRequest) -> Bool {
-        return mocker.find(request) != nil
+        return imitate.find(request) != nil
     }
 
     override public class func canonicalRequest(for request: URLRequest) -> URLRequest {
@@ -31,7 +31,7 @@ public class MockURLProtocol: URLProtocol {
     // MARK: -
 
     override public func startLoading() {
-        guard let handler = mocker.find(request) else { return }
+        guard let handler = imitate.find(request) else { return }
 
         let env = Environment(request: request)
 
