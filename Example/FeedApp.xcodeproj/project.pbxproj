@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		2D857E4E216D016300F5FA27 /* FeedAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D857E4D216D016300F5FA27 /* FeedAppUITests.swift */; };
 		2D857E57216D040100F5FA27 /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D857E56216D040100F5FA27 /* ShowViewController.swift */; };
 		2D857E59216D046300F5FA27 /* PostFetcherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D857E58216D046300F5FA27 /* PostFetcherService.swift */; };
+		2D9C6FC62365A1C400ADEF83 /* Imitate in Frameworks */ = {isa = PBXBuildFile; productRef = 2D9C6FC52365A1C400ADEF83 /* Imitate */; };
 		2DA2A31921665EC70071829D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA2A31821665EC70071829D /* AppDelegate.swift */; };
 		2DA2A31B21665EC70071829D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA2A31A21665EC70071829D /* FeedViewController.swift */; };
 		2DA2A31E21665EC70071829D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DA2A31C21665EC70071829D /* Main.storyboard */; };
@@ -106,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D9C6FC62365A1C400ADEF83 /* Imitate in Frameworks */,
 				2DB61BF62184810000E89466 /* Mocker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +297,9 @@
 				2DB61BF92184810000E89466 /* PBXTargetDependency */,
 			);
 			name = FeedApp;
+			packageProductDependencies = (
+				2D9C6FC52365A1C400ADEF83 /* Imitate */,
+			);
 			productName = FeedApp;
 			productReference = 2DA2A31521665EC70071829D /* FeedApp.app */;
 			productType = "com.apple.product-type.application";
@@ -331,6 +336,9 @@
 				Base,
 			);
 			mainGroup = 2DA2A30C21665EC70071829D;
+			packageReferences = (
+				2D9C6FC42365A1C400ADEF83 /* XCRemoteSwiftPackageReference "imitate-lib" */,
+			);
 			productRefGroup = 2DA2A31621665EC70071829D /* Products */;
 			projectDirPath = "";
 			projectReferences = (
@@ -717,6 +725,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2D9C6FC42365A1C400ADEF83 /* XCRemoteSwiftPackageReference "imitate-lib" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rzeszot-pro/imitate-lib";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2D9C6FC52365A1C400ADEF83 /* Imitate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D9C6FC42365A1C400ADEF83 /* XCRemoteSwiftPackageReference "imitate-lib" */;
+			productName = Imitate;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2DA2A30D21665EC70071829D /* Project object */;
 }

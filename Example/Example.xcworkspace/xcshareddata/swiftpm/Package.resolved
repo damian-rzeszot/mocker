@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Imitate",
+        "repositoryURL": "https://github.com/rzeszot-pro/imitate-lib",
+        "state": {
+          "branch": "master",
+          "revision": "39c7da8ff9c162d3e63ee04e0fbea5ad97e3a7c2",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
