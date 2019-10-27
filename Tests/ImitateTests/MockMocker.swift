@@ -1,21 +1,13 @@
-//
-//  MockMocker.swift
-//  MockerTests
-//
-//  Created by Damian Rzeszot on 27/10/2018.
-//  Copyright © 2018 Damian Rzeszot. All rights reserved.
-//
-
 import Foundation
-@testable import Mocker
+@testable import Imitate
 
-class MockMocker: Mocker {
+final class MockImitate: Imitate {
 
     // MARK: -
 
     var handler: ((Environment) -> Void)?
 
-    override func find(_ request: URLRequest) -> Mocker.Handler? {
+    override func find(_ request: URLRequest) -> Imitate.Handler? {
         return handler
     }
 
@@ -29,7 +21,7 @@ class MockMocker: Mocker {
 
     // MARK: -
 
-    override func get(_ string: String, with handler: @escaping Mocker.Handler) {
+    override func get(_ string: String, with handler: @escaping Imitate.Handler) {
         actions.append("+ GET \(string)")
     }
 

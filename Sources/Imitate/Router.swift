@@ -9,11 +9,11 @@
 import Foundation
 
 public protocol Router {
-    func start(with mocker: Mocker)
-    func stop(with mocker: Mocker)
+    func start(with imitate: Imitate)
+    func stop(with imitate: Imitate)
 }
 
-extension Mocker {
+extension Imitate {
 
     public func register(_ router: Router) {
         router.start(with: self)
