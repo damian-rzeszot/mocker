@@ -8,7 +8,13 @@
 
 import UIKit
 
+
+
 class CreateViewController: UIViewController {
+
+    // MARK: -
+
+    weak var delegate: CreateViewControllerDelegate?
 
     // MARK: -
 
@@ -23,7 +29,7 @@ class CreateViewController: UIViewController {
     // MARK: - Actions
 
     @IBAction private func backAction() {
-        dismiss(animated: true)
+        delegate?.createViewControllerDidCancel(self)
     }
 
     @IBAction private func sendAction() {
@@ -32,8 +38,9 @@ class CreateViewController: UIViewController {
         set(loading: true)
         service.create(content: text) { [weak self] success in
             DispatchQueue.main.async {
-                self?.set(loading: false)
-                self?.dismiss(animated: true)
+                guard let sself = self else { return }
+                sself.set(loading: false)
+                sself.delegate?.createViewControllerDidFinish(sself)
             }
         }
     }

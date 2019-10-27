@@ -7,8 +7,7 @@
 //
 
 import UIKit
-
-import Mocker
+import Imitate
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,16 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: -
 
     func application(_ app: UIApplication, didFinishLaunchingWithOptions launch: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        #if DEBUG
-            let options = CommandLine.arguments
-
-            if options.contains("--mocked-network") {
-                NSLog("debug | using mocked network")
-
-                URLProtocol.registerClass(MockURLProtocol.self)
-                Mocker.shared.register(FeedAppRouter.shared)
-            }
-        #endif
+        URLProtocol.registerClass(ImitateURLProtocol.self)
+        Imitate.shared.register(FeedAppRouter.shared)
 
         return true
     }
